@@ -16,7 +16,11 @@
           d="M5 13l4 4L19 7"
         />
       </svg>
-      <div class="text-purple-600 text-2xl font-bold">Legal Store</div>
+      <div class="text-purple-600 text-2xl font-bold">
+        <nuxt-link to="./">
+          Legal Store
+        </nuxt-link> 
+      </div>
       
       <div class="hidden sm:block ml-auto">
         <div div class="flex items-baseline space-x-4">
@@ -90,7 +94,7 @@
             <div class="px-4 py-1 leading-7 bg-gray-300 text-gray-800 text-lg font-bold rounded">
               {{ content.price }} yen / {{ content.unit.value }}{{ content.unit.unit }}
             </div>
-            <div class="ml-4 md:ml-6 px-2 py-1 leading-7 text-white text-base font-medium rounded" :style="`background-color: ${ content.category.color };`">
+            <div class="ml-4 md:ml-6 px-4 py-1 leading-7 text-white text-base font-medium rounded" :style="`background-color: ${ content.category.color };`">
               {{ content.category.name }}
             </div>
           </div>
@@ -182,7 +186,6 @@
       </div>
     </div>
   </footer>
-
   </div>
 </template>
 
